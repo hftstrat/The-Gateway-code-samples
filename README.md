@@ -17,7 +17,7 @@ Requirements
 2. The Gateway installed, with the indicated port opened.
 3. Your scripts with socket connections to The Gateway using the port and IP address.
 
-Getting started
+Getting started - Stream market data
 ===
 ### 1.Importing the classes ###
 In your Python script, import the required classes: 
@@ -65,6 +65,24 @@ socket_client.loop()
 ```
 Press <kbd>Ctrl</kbd>+<kbd>Z</kbd> or similar to terminate the process.
 
+
+Sending a market order
+===
+To send a sell order of a Emini Nasdaq-100 June 15 contract at the market price, define the contract details first:
+```
+contract, is_buy, qty = "XCME_Eq NQ (M15)", False, 1  # Order details
+```
+
+Then, set up the socket and call upon the gateway interface in the same manner.
+```
+socket_client = SocketClient("localhost", 4000)
+gateway = GatewayInterface(socket_client)
+```
+
+Finally, send the order:
+```
+gateway.send_market_order(contract, is_buy, qty)
+```
 
 Disclaimer
 ===
