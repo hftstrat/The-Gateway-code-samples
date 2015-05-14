@@ -10,7 +10,7 @@ Requirements
 ===
 1. A CTS-enabled futures trading account, or a simulator account. Sign up for a free simulator account at https://cts.sim.t4login.com/register?ref=CTS-footer.
 2. The Gateway installed, with the indicated port opened.
-3. Your scripts with socket connections to The Gataway using the port and IP address.
+3. Your scripts with socket connections to The Gateway using the port and IP address.
 
 Getting started
 ===
@@ -36,7 +36,7 @@ gateway = GatewayInterface(socket_client)
 ```
 
 ### 3. Request data ###
-The list of public methods can be found at http://scctrader-test.azurewebsites.net/code-samples#methods.
+The list of public methods can be found at http://scctrader.azurewebsites.net/code-samples#methods.
 
 For example, to stream market data, define a function to handle the event:
 ```
@@ -49,7 +49,7 @@ Then, tell The Gateway to use this function for market data updates:
 gateway.set_data_handlers(market_data=on_market_data)
 ```
 
-Now that our script can handle data updates, let's request for a Emini Dow Jun 15 contract:
+Now that our script can handle data updates, let's request for a Emini Dow June 15 contract quotes:
 ```
 gateway.request_market_data("XCME_E YM (M15)")
 ```
@@ -59,7 +59,7 @@ Keep the socket connection with an infinite loop:
 ```
 socket_client.loop()
 ```
-Press Ctrl + Z or similar to terminate the process.
+Press <kbd>Ctrl</kbd> + <kbd>Z</kbd> or similar to terminate the process.
 
 
 
