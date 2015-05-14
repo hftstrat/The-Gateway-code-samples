@@ -17,8 +17,14 @@ Requirements
 2. The Gateway installed, with the indicated port opened.
 3. Your scripts with socket connections to The Gateway using the port and IP address.
 
-Getting started - stream market data
+Getting started
 ===
+Open The Gateway and log in to your T4 account.
+Make a note of the IP address and port number displayed on The Gateway.
+Ensure that the port number is open and available when running over a network.
+
+## Streaming market data ##
+
 ### 1.Importing the classes ###
 In your Python script, import the required classes: 
 ```
@@ -28,9 +34,7 @@ from classes.gateway_interface import GatewayInterface
 Ensure your Python script lies in the same directory or in the *examples* directory within the source file directory. 
 
 ### 2. Set up the interface ###
-Create an instance of *SocketClient* with The Gateway's IP address and port number. Ensure that the port number is open and available when running over a network.
-
-The IP address and port number can be obtained from The Gateway directly.
+Create an instance of *SocketClient* with your IP address and port number.
 
 Then create an instance of *GatewayInterface*, which requires the instance of *SocketClient*. 
 
