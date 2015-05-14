@@ -10,13 +10,15 @@ Requirements
 2. The Gateway installed, with the indicated port opened.
 3. Your scripts with socket connections to The Gataway using the port and IP address.
 
-Getting started: Importing the classes
+Getting started: 
+1. Importing the classes
 ===
 In your Python script, import the required classes: 
 ```
 from classes.socket_client import SocketClient
-from classes.gateway_interface import GatewayInterface'
+from classes.gateway_interface import GatewayInterface
 ```
+Ensure your Python script lies in the same directory or in the *examples* directory within the source file directory. 
 
 
 
