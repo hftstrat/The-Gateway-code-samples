@@ -19,9 +19,10 @@ Requirements
 
 Getting started
 ===
-Open The Gateway and log in to your T4 account.
-Make a note of the IP address and port number displayed on The Gateway.
-Ensure that the port number is open and available when running over a network.
+- Open The Gateway and log in to your T4 account.
+- Make a note of the IP address and port number displayed on The Gateway.
+- Ensure that the port number is open and available when running over a network.
+- When working with <code>contract_id</code>, use the *Search contract* tool in The Gateway and look for the desired *Alias ID*.
 
 ## Streaming market data ##
 
@@ -57,7 +58,7 @@ Then, tell The Gateway to use this function for market data updates:
 gateway.set_data_handlers(market_data=on_market_data)
 ```
 
-Now that our script can handle data updates, let's request for a Emini Dow June 15 contract quotes:
+Now that our script can handle data updates, let's request for Emini Dow June 15 contract quotes:
 ```
 gateway.request_market_data("XCME_E YM (M15)")
 ```
