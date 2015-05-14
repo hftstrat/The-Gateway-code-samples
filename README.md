@@ -6,8 +6,8 @@ Download The Gateway for free at http://thegateway.azurewebsites.net.
 
 The Gateway simply extends CTS T4 (a futures trading platform) with a socket interface, allowing other programming languages such as Python to collect data and send orders.
 
-The *examples* folder contain Python scripts to test The Gateway.
-The *classes* folder contains required classes to run the examples.
+- The *examples* folder contain Python scripts to test The Gateway.
+- The *classes* folder contains required classes to run the examples.
 
 All scripts tested with Python 2.7.
 
