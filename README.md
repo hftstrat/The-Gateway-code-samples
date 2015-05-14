@@ -68,7 +68,7 @@ Press <kbd>Ctrl</kbd>+<kbd>Z</kbd> or similar to terminate the process.
 
 Sending a market order
 ===
-To send a sell order of a Emini Nasdaq-100 June 15 contract at the market price, first import the required classes and set up the interface.
+First, import the required classes and set up the interface in the same manner.
 ```
 from classes.socket_client import SocketClient
 from classes.gateway_interface import GatewayInterface
@@ -76,11 +76,14 @@ from classes.gateway_interface import GatewayInterface
 socket_client = SocketClient("localhost", 4000)
 gateway = GatewayInterface(socket_client)
 ```
-
-Then, send the order:
+To send a sell order of a Emini Nasdaq-100 June 15 contract at the market price:
 ```
 gateway.send_market_order("XCME_Eq NQ (M15)", False, 1)
 ```
+
+Documentation
+===
+Further information can be found at http://scctrader.azurewebsites.net/code-samples.
 
 Disclaimer
 ===
