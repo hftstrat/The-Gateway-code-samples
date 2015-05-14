@@ -12,7 +12,7 @@ Requirements
 
 Getting started
 ===
-# Importing the classes #
+## 1.Importing the classes ##
 In your Python script, import the required classes: 
 ```
 from classes.socket_client import SocketClient
@@ -20,7 +20,7 @@ from classes.gateway_interface import GatewayInterface
 ```
 Ensure your Python script lies in the same directory or in the *examples* directory within the source file directory. 
 
-# Set up the interface #
+## 2. Set up the interface ##
 Create an instance of *SocketClient* with The Gateway's IP address and port number. Ensure that the port number is open and available when running over a network.
 
 The IP address and port number can be obtained from The Gateway directly.
