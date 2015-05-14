@@ -13,8 +13,12 @@ Requirements
 Getting started: Importing the classes
 ===
 In your Python script, import the required classes: 
-'from classes.socket_client import SocketClient
+```
+from classes.socket_client import SocketClient
 from classes.gateway_interface import GatewayInterface'
+```
+
+
 
 
 
