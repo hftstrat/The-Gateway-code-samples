@@ -6,6 +6,11 @@ Download The Gateway for free at http://thegateway.azurewebsites.net.
 
 The Gateway simply extends CTS T4 (a futures trading platform) with a socket interface, allowing other programming languages such as Python to collect data and send orders.
 
+The *examples* folder contain Python scripts to test The Gateway.
+The *classes* folder contains required classes to run the examples.
+
+All scripts tested with Python 2.7.
+
 Requirements
 ===
 1. A CTS-enabled futures trading account, or a simulator account. Sign up for a free simulator account at https://cts.sim.t4login.com/register?ref=CTS-footer.
@@ -30,8 +35,7 @@ The IP address and port number can be obtained from The Gateway directly.
 Then create an instance of *GatewayInterface*, which requires the instance of *SocketClient*. 
 
 ```
-ip, port = "10.211.55.3", 4000
-socket_client = SocketClient(ip, port)
+socket_client = SocketClient("localhost", 4000)
 gateway = GatewayInterface(socket_client)
 ```
 
@@ -59,8 +63,16 @@ Keep the socket connection with an infinite loop:
 ```
 socket_client.loop()
 ```
-Press <kbd>Ctrl</kbd> + <kbd>Z</kbd> or similar to terminate the process.
+Press <kbd>Ctrl</kbd>+<kbd>Z</kbd> or similar to terminate the process.
 
+
+Disclaimer
+===
+Use The Gateway and all script files at your own risk! We at HFTStrat and all other third-party application providers are not responsible for losses or damages that may result from its use. 
+
+The Gateway is not affliated with CTS in any circumstances. 
+
+Futures and options trading involves substantial risk of loss and is not suitable for all investors. Clients may lose more than their initial investment. Past performance of actual trades or strategies cited herein is not necessarily indicative of future performance. 
 
 
 
