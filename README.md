@@ -64,15 +64,14 @@ gateway.request_market_data("XCME_E YM (M15)")
 ```
 
 ### 4. Keep the application active ###
-Keep the socket connection with an infinite loop:
+Keep the socket connection running with an infinite loop:
 ```
 socket_client.loop()
 ```
 Press <kbd>Ctrl</kbd>+<kbd>Z</kbd> or similar to terminate the process.
 
 
-Sending a market order
-===
+## Sending a market order ##
 First, import the required classes and set up the interface in the same manner.
 ```
 from classes.socket_client import SocketClient
