@@ -6,9 +6,9 @@ The Gateway simply extends CTS T4 (a futures trading platform) with a socket int
 
 Requirements
 ===
-- 1. A CTS-enabled futures trading account, or a simulator account. Sign up for a free simulator account at https://cts.sim.t4login.com/register?ref=CTS-footer.
-- 2. The Gateway installed, with the indicated port opened.
-- 3. Your scripts with socket connections to The Gataway using the port and IP address.
+* A CTS-enabled futures trading account, or a simulator account. Sign up for a free simulator account at https://cts.sim.t4login.com/register?ref=CTS-footer.
+* The Gateway installed, with the indicated port opened.
+* Your scripts with socket connections to The Gataway using the port and IP address.
 
 
 
