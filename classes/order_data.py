@@ -23,7 +23,7 @@ class OrderData:
         self.tradable_id = data.get("TradableId")
         self.is_buy = data.get("IsBuy")
         self.timestamp = data.get("Timestamp")
-        self.order_state = data.get("OrdrState")
+        self.order_state = data.get("OrderState")
         self.order_time = data.get("OrderTime")
         self.update_time = data.get("UpdateTime")
 
