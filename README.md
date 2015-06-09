@@ -26,7 +26,7 @@ Getting started
 
 ## Streaming market data ##
 
-### 1.Importing the classes ###
+### 1. Importing the classes ###
 In your Python script, import the required classes: 
 ```
 from classes.socket_client import SocketClient
