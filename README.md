@@ -11,6 +11,9 @@ The Gateway simply extends CTS T4 (a futures trading platform) with a socket int
 
 All scripts tested with Python 2.7.
 
+![alt text](http://scctrader.azurewebsites.net/static/thegatewayweb/images/gateway-window.png "The Gateway")
+
+
 Requirements
 ===
 1. A CTS-enabled futures trading account, or a simulator account. Sign up for a free simulator account at https://cts.sim.t4login.com/register?ref=CTS-footer.
