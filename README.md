@@ -2,7 +2,7 @@ What is The Gateway?
 ===
 The code samples here lets you trade futures, by using The Gateway.
 
-Download The Gateway for free at http://thegateway.azurewebsites.net.
+Download The Gateway for free at [https://goo.gl/UCPOvP](https://goo.gl/UCPOvP).
 
 The Gateway simply extends CTS T4 (a futures trading platform) with a socket interface, allowing other programming languages such as Python to collect data and send orders.
 
@@ -11,7 +11,7 @@ The Gateway simply extends CTS T4 (a futures trading platform) with a socket int
 
 All scripts tested with Python 2.7.
 
-![alt text](http://scctrader.azurewebsites.net/static/thegatewayweb/images/gateway-window.png "The Gateway")
+![alt text](http://hft.trackdis.site/static/thegatewayweb/images/gateway-window.png "The Gateway")
 
 Requirements
 ===
@@ -47,7 +47,7 @@ gateway = GatewayInterface(socket_client)
 ```
 
 ### 3. Request data ###
-The list of public methods can be found at http://scctrader.azurewebsites.net/code-samples#methods.
+The list of public methods can be found at [http://hft.trackdis.site/the-gateway/code-samples](http://hft.trackdis.site/the-gateway/code-samples).
 
 For example, to stream market data, define a function to handle the event:
 ```
