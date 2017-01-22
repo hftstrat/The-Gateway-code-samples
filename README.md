@@ -89,7 +89,7 @@ gateway.send_market_order("XCME_Eq NQ (M15)", False, 1)
 
 Documentation
 ===
-Further information can be found at http://scctrader.azurewebsites.net/code-samples.
+Further information can be found at [http://hft.trackdis.site/the-gateway/code-samples](http://hft.trackdis.site/the-gateway/code-samples).
 
 Disclaimer
 ===
